@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import routes from './routes'
+import {connect} from 'react-redux'
+import Header from './components/Header'
 
-function App() {
+function App(props) {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      {routes}
+      <div className="userIn">
+      {
+        props.isLoggedIn?`LOGGED IN AS ${props.user.email}`: null
+      }
+      </div>
     </div>
   );
 }
+const mapStateToProps = (reduxState) => {
+  return reduxState 
+}
 
-export default App;
+export default connect(mapStateToProps)(App);
