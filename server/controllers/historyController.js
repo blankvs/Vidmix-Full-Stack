@@ -1,3 +1,5 @@
+
+
 module.exports = {
     add: async (req, res) => {
         const db = req.app.get('db')
@@ -6,7 +8,7 @@ module.exports = {
         const results = await db.historyadd([ link, id ])
         res.status(200).send(results)
     },
-
+    
     remove: async (req, res) => {
         const { id } = req.session.user
         const removeLink = list.findLink(link => link.id == id)

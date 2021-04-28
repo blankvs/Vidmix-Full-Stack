@@ -4,15 +4,17 @@
     box-sizing: border-box;
 }
 
-//URL Input
-.urlInputControl {
+//URL INPUT
+
+.url-input {
     height: 35px;
     width: 400px;
     margin-right: 10px;
-    border: white 2.5px solid;
+    border: black 2.5px solid;
     background-color: #C7B299;
     padding-left: 15px;
     margin-bottom: 100px;
+    outline: none;
 }
 
 .urlInputControl[type=text] {
@@ -20,18 +22,30 @@
     opacity: 90%;
 }
 
-//Watch Button 
-.watchButton {
-    height: 35px;
-    width: 85px;
-    border: white 2.5px solid;
-    background-color: #C7B299;
-    transition: background-color 0.5s ease;
+//WATCH BUTTON 
+
+.form-format {
+    display: flex;
+    justify-content: center;
 }
 
-.watchButton:hover {
+.watch-button {
+    height: 35px;
+    width: 85px;
+    border: black 2.5px solid;
+    background-color: #C7B299;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+
+.watch-button:hover {
     background-color: black;
     color: white;
+}
+
+.embedded-video {
+    display: flex;
+    justify-content: center;
 }
 
 .url {
@@ -39,12 +53,12 @@
     margin-right: auto;
 }
 
-.logoVIDMIXHome {
+.logo-home {
     color: white;
     margin-right: 95%;
     font-size: 40px;
     padding-top: 15px;
-    padding-left: 10px;
+    padding-left: 30px;
 }
 
 //Nav Bar
@@ -116,6 +130,7 @@ li {
     padding-right: 19px;
     transition: background-color 0.5s ease;
     margin-left: 15px;
+    cursor: pointer;
 }
 
 .logoutButton:hover {
@@ -135,20 +150,12 @@ li {
 }
 
 .userIn {
-  padding-top: 250px;
+//   padding-top: 250px;
   text-align: center;
   color: black;
   font-weight: 300;
-}
-
-.registerSwitch {
-    text-decoration: none;
-    color: white;
-    transition: color 0.5s ease;
-}
-
-.registerSwitch:hover {
-    color: #C7B299;
+  position: relative;
+  bottom: 0;
 }
 
 @media(max-width: 520px) {

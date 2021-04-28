@@ -27,7 +27,7 @@ class Header extends Component {
         return (
             <header>
                 <div className="loginHeaderHome">
-                    <h1 className="logoVIDMIXHome">VIDMIX</h1>
+                    <h1 className="logo-home">VIDVIEU</h1>
                 </div>
                 <div className="navBar">
                     {

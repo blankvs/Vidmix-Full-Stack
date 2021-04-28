@@ -8,64 +8,87 @@ body {
     background-color: #C7B299;
 }
 
-.loginInputs {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.background-box {
     height: 500px;
     width: 400px;
     background-color: black;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 35px;
 }
 
-//Input Email
-.emailInput {
+//EMAIL CSS
+
+.email-input-title {
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.email-input {
     width: 350px;
     height: 35px;
     border: rgb(0, 0, 0) 20px;
     border-left: 5px white;
     background-color: #1A1A1A;
     margin-bottom: 25px;
-    margin-left: auto;
-    margin-right: auto;
     border-left: white 5px solid;
     padding-left: 5px;
+    outline: none;
+    text-align: center;
+    margin-left: 23.5px;
 }
 
-.emailInput[type=text] {
+.email-input[type=text] {
     color: white;
     opacity: 90%;
 }
 
-//Input Password
-.passwordInput {
+//PASSWORD CSS
+
+.password-input-title {
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.password-input {
     width: 350px;
     height: 35px;
     border: rgb(0, 0, 0) 20px;
     border-left: 5px white;
     background-color: #1A1A1A;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 260px;
     border-left: white 5px solid;
     padding-left: 5px;
+    outline: none;
+    text-align: center;
+    margin-left: 23.5px;
 }
 
-.passwordInput[type=text] {
+.password-input[type=text] {
     color: white;
     opacity: 90%;
 }
 
-//Button Login
-.loginButton {
+//BOTTOM BUTTONS 
+
+.bottom-button-formatter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 185px;
+}
+
+.login-button {
     width: 180px;
     height: 55px;
     border: rgb(0, 0, 0) 20px;
     border-left: 5px white;
     background-color: #000000;
-    margin-left: auto;
-    margin-right: auto;
     border: white 3.5px solid;
     color: white;
     font-size: 12px;
@@ -73,10 +96,23 @@ body {
     transition: background-color 0.5s ease;
 }
 
-.loginButton:hover {
+.login-button:hover {
     background-color: white;
     color: black;
 }
+
+.register-switch {
+    text-decoration: none;
+    color: white;
+    transition: color 0.5s ease;
+    margin-bottom: 10px;
+}
+
+.register-switch:hover {
+    color: #C7B299;
+}
+
+
 
 //Header Login
 .loginHeader {
@@ -84,21 +120,6 @@ body {
     width: 100vw;
     background-color: black;
     margin-bottom: 35px;
-}
-
-.h1Email {
-    color: white;
-    font-size: 18px;
-    font-weight: 200;
-    margin-bottom: 10px;
-
-}
-
-.h1Password {
-    color: white;
-    font-size: 18px;
-    font-weight: 200;
-    margin-bottom: 10px;
 }
 
 .logoVIDMIX {
@@ -109,59 +130,48 @@ body {
     padding-left: 10px;
 }
 
-@media(max-width: 520px) {
-    .loginInputs {
-        width: 300px;
-        height: 400px;
-    }
-    .emailInput {
-        width: 200px;
-        height: 25px;
+// @media(max-width: 520px) {
+//     .loginInputs {
+//         width: 300px;
+//         height: 400px;
+//     }
+//     .emailInput {
+//         width: 200px;
+//         height: 25px;
         
-    }
-    .h1Email {
-        margin-top: 15px;
-    }
-    .passwordInput {
-        width: 200px;
-        height: 25px;
-        margin-bottom: 150px;
-    }
-    .loginButton {
-        height: 50px;
-    }
-    h1.logoVIDMIXHome {
-        font-size: 40px;
-        padding-right: -100px;
-    }
-    li {
-        margin-left: 100;
-    }
-    li.logoutButton {
-        margin-top: 650px;
-        margin-left: -335px;
-        padding-left: -50px;
-        background-color: black;
-    }
-    input.urlInputControl {
-        margin-left: -30px;
-    }
-    a.linkHome {
-        margin-left: -300px;
-    }
-    a.linkHistory {
-        margin-left: -200px;
-    }
+//     }
+//     .h1Email {
+//         margin-top: 15px;
+//     }
+//     .passwordInput {
+//         width: 200px;
+//         height: 25px;
+//     }
+//     .loginButton {
+//         height: 50px;
+//     }
+//     h1.logoVIDMIXHome {
+//         font-size: 40px;
+//         padding-right: -100px;
+//     }
+//     li {
+//         margin-left: 100;
+//     }
+//     li.logoutButton {
+//         margin-top: 650px;
+//         margin-left: -335px;
+//         padding-left: -50px;
+//         background-color: black;
+//     }
+//     input.urlInputControl {
+//         margin-left: -30px;
+//     }
+//     a.linkHome {
+//         margin-left: -300px;
+//     }
+//     a.linkHistory {
+//         margin-left: -200px;
+//     }
     
-}
-
-.registerSwitch {
-    text-decoration: none;
-    color: white;
-    transition: color 0.5s ease;
-}
-
-.registerSwitch:hover {
-    color: #C7B299;
-}
+// }
 

@@ -32,7 +32,6 @@ app.post('/auth/login', authCtrl.login)
 app.delete('/auth/logout', authCtrl.logout)
 app.get('/auth', authCtrl.getUser)
 
-
 //YOU TUBE URL
 app.get('/api/find', videoCtrl.find)
 

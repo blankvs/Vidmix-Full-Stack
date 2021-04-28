@@ -3,7 +3,7 @@ import axios from 'axios'
 import '../scss/loginStyles.scss'
 import { connect } from 'react-redux'
 import { loginUser } from '../Redux/userReducer'
-import { Link , Redirect } from "react-router-dom"
+import { Link, Redirect } from "react-router-dom"
 
 
 
@@ -31,24 +31,25 @@ class Login extends Component {
 
   render() {
 
-    if(this.props.isLoggedIn){
-      return <Redirect to = "/Home"/> 
+    if (this.props.isLoggedIn) {
+      return <Redirect to="/Home" />
     }
 
     return (
-      <div>
-        <div className="loginInputs">
-          <h1 className="h1Email">EMAIL</h1>
-          <input className="emailInput" value={this.state.email} name="email" type="text" onChange={(e) => this.onType(e)} />
-          <h1 className="h1Password">PASSWORD</h1>
-          <input className="passwordInput" value={this.state.password} name="password" type="text" onChange={(e) => this.onType(e)} />
-          <ul>
-            <li><Link className="registerSwitch" to="/Register">REGISTER?</Link></li>
-          </ul>
-          <button className="loginButton" onClick={() => this.handleLogin()}>LOGIN</button>
+        <div className="background-box">
+          
+            <h1 className="email-input-title">EMAIL</h1>
+            <input className="email-input" value={this.state.email} name="email" type="text" onChange={(e) => this.onType(e)} />
+            <h1 className="password-input-title">PASSWORD</h1>
+            <input className="password-input" value={this.state.password} name="password" type="text" onChange={(e) => this.onType(e)} />
+          
+
+          <div className="bottom-button-formatter">
+            <Link className="register-switch" to="/Register">REGISTER?</Link>
+            <button className="login-button" onClick={() => this.handleLogin()}>LOGIN</button>
+          </div>
 
         </div>
-      </div>
     )
   }
 }

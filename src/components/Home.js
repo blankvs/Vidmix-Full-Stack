@@ -25,14 +25,14 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div className="Home">
-        <div>
+      <div className="home">
+        <div className="form-format">
           <form onSubmit={this.handleSubmit}>
-            <input className="urlInputControl" onChange={this.handleChange} type="text" placeholder="PASTE VIDEO URL" />
-            <button className="watchButton">WATCH</button>
+            <input className="url-input" onChange={this.handleChange} type="text" placeholder="PASTE VIDEO URL" />
+            <button className="watch-button">WATCH</button>
           </form>
         </div>
-        <div className="embedVid">
+        <div className="embedded-video">
           <ReactPlayer
             url={this.state.url} controls={true}
           />
