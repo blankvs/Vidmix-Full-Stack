@@ -12,11 +12,11 @@ function App(props) {
       <div>
         {routes}
       </div>
-      <div className="userIn">
-        {
-          props.isLoggedIn ? `LOGGED IN AS ${props.user.email}` : null
-        }
-      </div>
+        <div className="user-name">
+          {
+            props.isLoggedIn ? `LOGGED AS • ${props.user.email}` : null
+          }
+        </div>
     </div>
   );
 }

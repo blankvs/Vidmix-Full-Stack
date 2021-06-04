@@ -15,6 +15,7 @@
     padding-left: 15px;
     margin-bottom: 100px;
     outline: none;
+    cursor: pointer;
 }
 
 .urlInputControl[type=text] {
@@ -43,9 +44,21 @@
     color: white;
 }
 
+.opacity-video-holder {
+    width: 640px;
+    height: 360px;
+    background-color: black;
+    opacity: 10%;
+    margin-left: -640px;
+}
+
 .embedded-video {
     display: flex;
     justify-content: center;
+}
+
+.embedded-video-formatter {
+    z-index: 1;
 }
 
 .url {
@@ -59,6 +72,7 @@
     font-size: 40px;
     padding-top: 15px;
     padding-left: 30px;
+    text-decoration: line-through;
 }
 
 //Nav Bar
@@ -69,7 +83,6 @@
     transition: 0.3s ease 0s;
     width: 50%;
     margin-right: 20px;
-    
 }
 
 .nav_links:hover {
@@ -149,13 +162,53 @@ li {
     color: white;
 }
 
-.userIn {
-//   padding-top: 250px;
-  text-align: center;
-  color: black;
-  font-weight: 300;
-  position: relative;
-  bottom: 0;
+.user-name {
+    text-align: center;
+    color: white;
+    font-weight: 300; 
+    margin-top: 15px; 
+    font-weight: 400; 
+    position: absolute; 
+    bottom: 30px; 
+    left: 25%; 
+    right: 25%; 
+}
+
+.user-formatter {
+    height: 40px;
+    width: 300px;
+    background-color: black;
+    border: white 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 22px;
+}
+
+.footer {
+    width: 100vw;
+    height: 80px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+}
+
+.user-beginning {
+    color: white; 
+    font-size: 14px;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 15px;
+    font-weight: 400;
+}
+
+.cc {
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-left: 30px;
+    letter-spacing: 5px;
+    margin-top: -30px;
 }
 
 @media(max-width: 520px) {
@@ -168,6 +221,4 @@ li {
         padding-left: 15px;
         margin-bottom: 100px;
     }
-
-    
 }

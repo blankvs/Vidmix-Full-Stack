@@ -33,9 +33,12 @@ class Home extends React.Component {
           </form>
         </div>
         <div className="embedded-video">
-          <ReactPlayer
-            url={this.state.url} controls={true}
-          />
+          <ReactPlayer className="embedded-video-formatter" url={this.state.url} controls={true} />
+          <div className="opacity-video-holder"></div>
+        </div>
+        <div className="footer">
+          <div className="user-formatter"></div>
+          <h1 className="cc">©PiaoAltoVieu 2021</h1>
         </div>
       </div>
     );

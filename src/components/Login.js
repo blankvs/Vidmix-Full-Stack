@@ -42,7 +42,7 @@ class Login extends Component {
             <input className="email-input" value={this.state.email} name="email" type="text" onChange={(e) => this.onType(e)} />
             <h1 className="password-input-title">PASSWORD</h1>
             <input className="password-input" value={this.state.password} name="password" type="text" onChange={(e) => this.onType(e)} />
-          
+           
 
           <div className="bottom-button-formatter">
             <Link className="register-switch" to="/Register">REGISTER?</Link>
